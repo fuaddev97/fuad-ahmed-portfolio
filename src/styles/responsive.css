@@ -1,0 +1,39 @@
+@media (max-width:1100px){
+  .head-cv{display:none}
+  .nav{gap:1.2rem}
+  .steps,.process-extra{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .snap-grid{grid-template-columns:1fr 1fr}.snap.feature{grid-column:1/-1;grid-row:auto}
+}
+@media (max-width:900px){
+  .burger{display:block}
+  .nav{position:fixed;inset:4.5rem 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(4,8,22,.96);backdrop-filter:blur(18px);padding:1rem var(--gutter) 1.6rem;border-bottom:1px solid rgba(169,198,255,.2);transform:translateY(-130%);visibility:hidden;pointer-events:none;transition:transform .5s var(--ease);max-height:calc(100svh - 4.5rem);overflow:auto}
+  .nav.open{transform:none;visibility:visible;pointer-events:auto}
+  .nav a.link{padding:.9rem 0;font-size:1.2rem;border-bottom:1px solid rgba(169,198,255,.12)}
+  .nav a.link::after{display:none}
+  .shard-left{display:none}
+  .hero{align-items:flex-start}
+  .hero-inner{grid-template-columns:1fr;min-height:auto}
+  .hero{padding-top:4.5rem}
+  .hero-fig{order:-1;height:min(58svh,520px);width:min(100%,420px);align-self:center;margin-bottom:-1.2rem}
+  .hero-copy{padding-bottom:3rem;padding-top:0}
+  .halo{width:120%;bottom:-6%}.ring{width:132%;bottom:-6%}
+  .about,.contact-grid,.cs-body,.lib-item{grid-template-columns:1fr}
+  .cap{grid-template-columns:1fr;gap:.8rem}
+  .about-art{max-width:420px}
+  .foot-grid{grid-template-columns:1fr 1fr}.foot-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:700px){
+  .deck{grid-template-columns:1fr}
+  .snap-grid,.steps,.process-extra,.values{grid-template-columns:1fr}
+  .head-tools .icon-btn{display:none}
+  .big-name{display:none}
+}
+@media (max-width:480px){.hero h1{font-size:2.6rem}.btn{padding:.8rem 1.2rem}.head-contact{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .hero h1 .ln span,.fade-in,.me,.halo,.big-name{opacity:1!important;transform:none!important}
+  .halo{transform:translateX(-50%)!important}
+  [data-reveal]{opacity:1;transform:none}
+}
+.lib-item>a{display:block;border-radius:1.2rem;overflow:hidden}
+.lib-item img{height:auto}

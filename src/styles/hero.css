@@ -1,0 +1,31 @@
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;padding-top:6rem}
+.hero .bg-glow{position:absolute;inset:0;z-index:-3;background:var(--grad-dark)}
+.hero .grid-lines{position:absolute;inset:0;z-index:-2;opacity:.5;background-image:linear-gradient(rgba(169,198,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(169,198,255,.07) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse at 70% 55%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 55%,#000 10%,transparent 70%)}
+.hero-inner{width:100%;max-width:1400px;margin-inline:auto;padding-inline:var(--gutter);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:end;min-height:calc(100svh - 6rem)}
+.hero-copy{align-self:center;padding-bottom:clamp(3rem,8vh,6rem);position:relative;z-index:5}
+.hero h1{font-size:clamp(2.6rem,5.4vw,5rem);color:var(--white);max-width:none}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .ln span{display:inline-block;transform:translateY(110%);animation:lineUp 1s var(--ease) forwards;animation-delay:calc(.35s + var(--i)*.12s)}
+.hero h1 .grad{background:linear-gradient(90deg,var(--ice),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes lineUp{to{transform:none}}
+.role{font-family:var(--font-display);font-size:clamp(1.1rem,2vw,1.4rem);color:var(--ice);font-weight:500;margin-bottom:1rem;letter-spacing:-.01em}
+.hero .intro{margin-top:1.6rem;font-size:1.18rem;color:rgba(223,233,255,.8);max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .9s var(--ease) forwards;animation-delay:var(--d,.2s)}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+.hero-fig{position:relative;align-self:end;justify-self:center;width:min(100%,640px);height:min(88vh,860px);display:flex;align-items:flex-end;justify-content:center}
+.halo{position:absolute;left:50%;bottom:8%;width:112%;aspect-ratio:1;transform:translateX(-50%) scale(.6);border-radius:50%;opacity:0;background:radial-gradient(circle at 50% 45%,#ffffff 0%,#dbe8ff 22%,#8fb4ff 48%,rgba(28,78,216,.55) 66%,rgba(28,78,216,0) 72%);filter:blur(2px);animation:haloIn 1.6s .1s var(--ease) forwards}
+@keyframes haloIn{to{opacity:.92;transform:translateX(-50%) scale(1)}}
+.ring{position:absolute;left:50%;bottom:8%;width:124%;aspect-ratio:1;border-radius:50%;border:1px dashed rgba(169,198,255,.35);transform:translateX(-50%);animation:spin 60s linear infinite}
+.ring::after{content:"";position:absolute;top:8%;left:50%;width:.8rem;height:.8rem;border-radius:50%;background:var(--cyan);box-shadow:0 0 24px 6px rgba(56,189,248,.7)}
+@keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
+.me{position:relative;z-index:3;height:100%;width:auto;max-width:none;object-fit:contain;object-position:bottom;transform:translateY(8%);opacity:0;animation:meIn 1.3s .25s var(--ease) forwards;-webkit-mask-image:linear-gradient(#000 82%,transparent 100%);mask-image:linear-gradient(#000 82%,transparent 100%)}
+@keyframes meIn{to{opacity:1;transform:none}}
+.big-name{position:absolute;z-index:1;left:50%;bottom:12%;transform:translateX(-50%);font-family:var(--font-display);font-weight:800;font-size:clamp(6rem,11vw,10.5rem);line-height:.8;letter-spacing:-.05em;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(169,198,255,.28);pointer-events:none;user-select:none;opacity:0;animation:fadeUp 1.4s .6s var(--ease) forwards}
+.shard{position:absolute;z-index:2;will-change:transform;pointer-events:none}
+.shard svg{width:100%;height:auto;animation:float 7s ease-in-out infinite alternate}
+@keyframes float{from{transform:translateY(-8px) rotate(-3deg)}to{transform:translateY(10px) rotate(4deg)}}
+.scroll-cue{position:absolute;left:50%;bottom:1.4rem;transform:translateX(-50%);z-index:6;width:1.6rem;height:2.6rem;border:1.5px solid rgba(255,255,255,.5);border-radius:1rem;display:none}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:.45rem;width:3px;height:.5rem;border-radius:2px;background:#fff;transform:translateX(-50%);animation:wheel 1.8s infinite}
+@keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,.9rem)}}

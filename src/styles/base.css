@@ -1,0 +1,46 @@
+@font-face{font-family:"Inter";src:url(../assets/fonts/inter-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+
+:root{
+  --ink:#040816;
+  --navy:#0a1a4a;
+  --cobalt:#1c4ed8;
+  --sky:#5b8def;
+  --ice:#a9c6ff;
+  --cyan:#38bdf8;
+  --white:#ffffff;
+  --mist:#f1f6ff;
+  --text-dark:#0b1533;
+  --text-soft:#4a5780;
+  --font-sans:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-display:var(--font-sans);
+  --font-body:var(--font-sans);
+  --gutter:clamp(1.25rem,5vw,4rem);
+  --max:1240px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --grad-dark:radial-gradient(900px 600px at 12% 8%,rgba(28,78,216,.45),transparent 60%),radial-gradient(1000px 700px at 95% 100%,rgba(28,78,216,.7),transparent 60%),linear-gradient(160deg,#071336 0%,#040816 55%,#06113a 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);font-size:1.0625rem;line-height:1.6;color:var(--text-dark);background:var(--white);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:.5rem;background:var(--white);color:var(--ink);padding:.6rem 1rem;border-radius:8px;z-index:200}
+.skip:focus{left:.5rem}
+
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.04;letter-spacing:-.025em;font-weight:700}
+h2{font-size:clamp(2.2rem,5vw,4rem);max-width:18ch}
+h3{font-size:1.35rem;letter-spacing:-.015em}
+p{max-width:62ch}
+
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.section{position:relative;padding-block:clamp(4.5rem,10vw,8rem)}
+.on-dark{background:var(--grad-dark);color:var(--white)}
+.on-dark .soft{color:rgba(223,233,255,.72)}
+.on-light{background:var(--white)}
+.on-mist{background:var(--mist)}
+.soft{color:var(--text-soft)}
+.sec-head{display:grid;gap:1.2rem;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.sec-head p{font-size:1.15rem}

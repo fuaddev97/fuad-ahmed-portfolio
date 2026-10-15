@@ -1,0 +1,10 @@
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.stack-card{border:1px solid rgba(11,21,51,.12);border-radius:1.4rem;padding:1.5rem;background:#fff;transition:transform .4s var(--ease),border-color .3s}
+.stack-card:hover{transform:translateY(-5px);border-color:var(--sky)}
+.stack-card h3{font-size:1.05rem;margin-bottom:1rem;color:var(--cobalt)}
+.stack-card .pills{gap:.5rem}
+.stack-card .pill{background:var(--mist)}
+.stack-note{margin-top:1.4rem;font-size:.95rem}
+
+.stack-card .pill{white-space:nowrap}
+@media (min-width:1000px){.stack-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.stack-card{grid-column:span 2}.stack-card:nth-child(n+4){grid-column:span 3}}

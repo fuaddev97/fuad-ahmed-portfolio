@@ -1,0 +1,6 @@
+.cap-list{display:grid;gap:0;border-top:1px solid rgba(11,21,51,.14)}
+.cap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:1.5rem 3rem;align-items:center;padding:1.8rem .5rem;border-bottom:1px solid rgba(11,21,51,.14);position:relative;transition:background .4s var(--ease),padding .4s var(--ease)}
+.cap::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--cobalt);transition:width .4s var(--ease);border-radius:2px}
+.cap:hover{background:#fff;padding-left:1.5rem}
+.cap:hover::before{width:4px}
+.cap h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}

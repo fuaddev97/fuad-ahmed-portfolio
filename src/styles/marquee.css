@@ -1,0 +1,5 @@
+.marquee{background:var(--ink);border-block:1px solid rgba(169,198,255,.14);overflow:hidden;padding-block:1.1rem;color:rgba(223,233,255,.75)}
+.marquee .track{display:flex;gap:3rem;width:max-content;animation:marq 38s linear infinite;font-family:var(--font-display);font-size:1.4rem;font-weight:600;letter-spacing:-.01em}
+.marquee span{display:flex;align-items:center;gap:3rem}
+.marquee span::after{content:"";width:.5rem;height:.5rem;background:var(--cyan);transform:rotate(45deg)}
+@keyframes marq{to{transform:translateX(-50%)}}
