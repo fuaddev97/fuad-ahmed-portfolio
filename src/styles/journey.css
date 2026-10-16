@@ -9,3 +9,7 @@
 .tl ul{display:grid;gap:.3rem;margin-top:.5rem;color:var(--text-soft)}
 .tl ul a{color:var(--cobalt);font-weight:600;border-bottom:1.5px solid rgba(28,78,216,.3)}
 .tl ul a:hover{border-color:var(--cobalt)}
+
+.tl .org{font-size:.98rem;margin-bottom:.5rem}
+.tl ul strong{color:var(--text-dark);font-weight:600}
+.tl p.soft + p.soft{margin-top:.2rem}

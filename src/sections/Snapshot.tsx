@@ -1,6 +1,7 @@
+import { SITE } from '../data/site'
 import Reveal from '../components/Reveal'
 
-const CORE = ['HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'Git', 'GitHub']
+const CORE = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Tailwind', 'Sass', 'Git', 'GitHub']
 
 export default function Snapshot() {
   return (
@@ -17,20 +18,20 @@ export default function Snapshot() {
           </Reveal>
           <Reveal delay={0.08} className="snap">
             <h3>Current role</h3>
-            <p className="big">Frontend developer</p>
-            <p className="soft">Building independent portfolio projects and growing towards production React and TypeScript work.</p>
+            <p className="big">Freelance web developer</p>
+            <p className="soft">Building responsive websites for cafés, restaurants and real estate firms, alongside my work as a logistics officer.</p>
           </Reveal>
           <Reveal delay={0.16} className="snap dark">
             <h3>Core technologies</h3>
             <div className="pills">{CORE.map((t) => <span className="pill" key={t}>{t}</span>)}</div>
           </Reveal>
           <Reveal delay={0.24} className="snap">
-            <h3>Professional interests</h3>
-            <p className="big" style={{ fontSize: '1.5rem' }}>Interface motion, component design and accessible markup.</p>
+            <h3>Currently learning</h3>
+            <p className="big" style={{ fontSize: '1.5rem' }}>Backend web development, on the way to full-stack.</p>
           </Reveal>
           <Reveal delay={0.32} className="snap">
-            <h3>Hosting and tooling</h3>
-            <p className="big" style={{ fontSize: '1.5rem' }}>Vercel, Vite and the browser dev tools.</p>
+            <h3>Based in {SITE.location}</h3>
+            <p className="big" style={{ fontSize: '1.5rem' }}>English, Arabic and Turkish, all fluent.</p>
           </Reveal>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default function Hero() {
 
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="role fade-in" style={{ '--d': '.2s' } as React.CSSProperties}>Frontend Developer</p>
+          <p className="role fade-in" style={{ '--d': '.2s' } as React.CSSProperties}>Frontend Web Developer</p>
           <h1 aria-label="I build interfaces that feel fast and look right.">
             <span className="ln" aria-hidden="true"><span style={{ '--i': 0 } as React.CSSProperties}>I build interfaces</span></span>
             <span className="ln" aria-hidden="true">

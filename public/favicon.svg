@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="500 455 620 690" stroke-linejoin="round" stroke-width="26"><rect x="400" y="380" width="820" height="840" rx="160" fill="#071336" stroke="none"/><path d="M792 482 1090 672 792 715Z" fill="#f2f7ff" stroke="#f2f7ff"/><path d="M542 612 728 846 522 962Z" fill="#5b8def" stroke="#5b8def"/><path d="M876 838 1078 950 764 1112Z" fill="#a9c6ff" stroke="#a9c6ff"/><path d="M800 772 824 818H776Z" fill="#38bdf8" stroke="#38bdf8"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="471 462 670 670" stroke-linejoin="round" stroke-width="26">
+  <style>
+    /* The white triangle would vanish on a light browser tab, so it turns navy there. */
+    @media (prefers-color-scheme: light) { .w { fill: #0b1a4a; stroke: #0b1a4a } }
+  </style>
+  <path class="w" d="M792 482 1090 672 792 715Z" fill="#f2f7ff" stroke="#f2f7ff"/>
+  <path d="M542 612 728 846 522 962Z" fill="#5b8def" stroke="#5b8def"/>
+  <path d="M876 838 1078 950 764 1112Z" fill="#a9c6ff" stroke="#a9c6ff"/>
+  <path d="M800 772 824 818H776Z" fill="#38bdf8" stroke="#38bdf8"/>
+</svg>

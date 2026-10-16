@@ -2,10 +2,10 @@ import Reveal from '../components/Reveal'
 import me from '../assets/img/me.webp'
 
 const VALUES = [
-  { title: 'Clarity', text: 'Simple structure, readable code, honest communication.' },
-  { title: 'Accessibility', text: 'Interfaces that work with a keyboard, a screen reader and a small screen.' },
-  { title: 'Craft', text: 'I sweat the spacing, the timing and the last 10%.' },
-  { title: 'Curiosity', text: 'I keep learning and keep building.' },
+  { title: 'Cross-cultural communication', text: 'Fluent in English, Arabic and Turkish, with intermediate Amharic.' },
+  { title: 'Clear explanations', text: 'Years of teaching taught me to explain technical ideas simply.' },
+  { title: 'Analytical mindset', text: 'My engineering background shapes how I break problems down.' },
+  { title: 'Fast, self-driven learner', text: 'I taught myself frontend development and I’m now learning backend.' },
 ]
 
 export default function About() {
@@ -18,13 +18,14 @@ export default function About() {
         <div className="about-text">
           <Reveal as="h2" id="ab-h">About me</Reveal>
           <Reveal as="p" delay={0.05}>
-            I’m a frontend developer who likes the moment a design comes alive in the browser. I enjoy the craft in the details:
-            type that reads well, layouts that hold up on any screen and motion that guides rather than distracts.
+            I’m a mechanical engineer turned frontend web developer. I studied mechanical engineering in Turkey on a scholarship,
+            then worked in teaching, sales and logistics before moving into web development. That mix gives me an international,
+            multilingual background and a habit of explaining things clearly.
           </Reveal>
           <Reveal as="p" delay={0.1} className="soft">
-            I learn by building real projects, reading the documentation and debugging until I understand why something works.
-            My goal is to join a team that ships production React and TypeScript interfaces, and to keep taking on freelance work
-            that lets me do the same.
+            I build clean, responsive websites with React, TypeScript and Tailwind CSS, and I’m now learning backend development
+            to become a full-stack engineer. I’m reliable, adaptable and quick to learn, and I’m looking for roles and freelance
+            projects where I can keep growing.
           </Reveal>
           <div className="values">
             {VALUES.map((v, i) => (

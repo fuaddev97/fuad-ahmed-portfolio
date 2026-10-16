@@ -21,3 +21,13 @@ export interface Step {
   title: string
   description: string
 }
+
+export interface JourneyItem {
+  when: string
+  title: string
+  org: string
+  kind: string
+  text?: string
+  details?: { label?: string; text: string }[]
+  showProjects?: boolean
+}

@@ -1,8 +1,8 @@
-import type { Capability, Step } from '../types'
+import type { Capability, JourneyItem, Step } from '../types'
 
 export const MARQUEE_ITEMS = [
-  'HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS',
-  'Framer Motion', 'Git', 'GitHub', 'Responsive design', 'Accessibility',
+  'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS',
+  'Sass', 'Framer Motion', 'Git', 'GitHub', 'Responsive design', 'Deployment',
 ]
 
 export const CAPABILITIES: Capability[] = [
@@ -32,11 +32,11 @@ export const CAPABILITIES: Capability[] = [
 ]
 
 export const STACK_GROUPS: { title: string; items: string[] }[] = [
-  { title: 'Languages', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript'] },
+  { title: 'Languages', items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'] },
   { title: 'Frameworks and libraries', items: ['React', 'Next.js', 'Framer Motion'] },
-  { title: 'Styling', items: ['CSS', 'Tailwind CSS', 'Responsive design'] },
-  { title: 'Development tools', items: ['Git', 'GitHub', 'Vite', 'Vercel'] },
-  { title: 'Web fundamentals', items: ['Semantic HTML', 'Accessibility', 'Performance'] },
+  { title: 'Styling', items: ['Tailwind CSS', 'Sass', 'Responsive design'] },
+  { title: 'Tools and workflow', items: ['Git', 'GitHub', 'Vite', 'Vercel deployment'] },
+  { title: 'Currently learning', items: ['Backend web development'] },
 ]
 
 export const STEPS: Step[] = [
@@ -52,4 +52,63 @@ export const EXTRA_PRACTICES: Step[] = [
   { title: 'Documentation', description: 'I write down decisions and setup steps in the README so the next person can pick the project up.' },
   { title: 'Debugging', description: 'I reproduce the bug first, then narrow it down with the browser dev tools before I change any code.' },
   { title: 'AI-assisted development', description: 'I use AI tools to explore options and speed up boilerplate, then read and test every line before it ships.' },
+]
+
+export const JOURNEY: JourneyItem[] = [
+  {
+    when: 'Present',
+    title: 'Freelance Web Developer',
+    org: 'Self-employed · Remote',
+    kind: 'Freelance',
+    text: 'I build responsive websites for cafés, restaurants and real estate firms, delivering clean, modern interfaces with React, TypeScript and Tailwind CSS.',
+    showProjects: true,
+  },
+  {
+    when: 'Present',
+    title: 'Logistics Officer',
+    org: 'Testi Trading PLC · Addis Ababa, Ethiopia',
+    kind: 'Employment',
+    details: [
+      { text: 'Coordinate shipments and deliveries with suppliers and transporters.' },
+      { text: 'Prepare and track logistics documents and delivery schedules.' },
+    ],
+  },
+  {
+    when: 'Previously',
+    title: 'Sales Representative',
+    org: 'Özinan Asansör (elevator manufacturer) · Samsun, Turkey',
+    kind: 'Employment',
+    text: 'Sold elevator solutions and explained technical details clearly to clients.',
+  },
+  {
+    when: 'Previously',
+    title: 'English Teacher',
+    org: 'Samsun, Turkey',
+    kind: 'Employment',
+    details: [
+      { label: 'Çözüm Koleji', text: 'led interactive lessons with role-plays, games and group projects.' },
+      { label: 'Engin Bilgi', text: 'made grammar fun with songs, quizzes and speaking challenges.' },
+      { label: 'American Life English Language Institute', text: 'ran conversation classes built on real-life scenarios to boost fluency.' },
+    ],
+  },
+  {
+    when: 'Education',
+    title: 'Frontend Software Engineering',
+    org: 'Self-directed training · Online',
+    kind: 'Self-taught',
+    text: 'HTML, CSS, JavaScript, React, TypeScript, Tailwind CSS, Sass and Git.',
+  },
+  {
+    when: 'Education',
+    title: 'B.Sc. Mechanical Engineering',
+    org: 'Ondokuz Mayıs University · Samsun, Turkey',
+    kind: 'Degree',
+    text: 'Studied on a scholarship.',
+  },
+  {
+    when: 'Education',
+    title: 'High School Diploma',
+    org: 'Spring of Knowledge Academy · Addis Ababa, Ethiopia',
+    kind: 'School',
+  },
 ]

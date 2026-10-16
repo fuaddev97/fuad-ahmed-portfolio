@@ -14,3 +14,10 @@ form.cform{display:grid;gap:1rem;padding:clamp(1.4rem,3vw,2.2rem);border-radius:
 .field textarea{min-height:9rem;resize:vertical}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(56,189,248,.2)}
 .form-note{font-size:.9rem;min-height:1.3rem}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.form-note.sending,.form-note.idle,.form-note.opened{color:rgba(223,233,255,.72)}
+.form-note.sent{color:#4ade80}
+.form-note.error,.form-note.invalid{color:#fca5a5}
+.btn:disabled{opacity:.7;cursor:progress}
+.btn:disabled:hover{box-shadow:none}
+.field input:disabled,.field textarea:disabled{opacity:.6}

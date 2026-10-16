@@ -7,7 +7,7 @@ export default function TechStack() {
       <div className="wrap">
         <Reveal className="sec-head">
           <h2 id="stack-h">Technology I use</h2>
-          <p className="soft">Only tools I have actually worked with.</p>
+          <p className="soft">The tools I work with, and what I’m learning next.</p>
         </Reveal>
         <div className="stack-grid">
           {STACK_GROUPS.map((g, i) => (
